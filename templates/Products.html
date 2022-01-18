@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Building bulletproof apps, Super Duper &amp;amp; such, Designed for humans, Conectivity, Lorem ipsum dolor sit amet, cotur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam., See our awesome gallery, It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename='css/Home.css') }}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename='css/sainpse.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='script/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='script/nicepage.js') }}" defer=""></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="{{url_for('static', filename='script/Tayloravator.js') }}"></script>
+    <script>
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    function init() {
+      canvas = document.getElementById("canvas");
+      anim_container = document.getElementById("animation_container");
+      dom_overlay_container = document.getElementById("dom_overlay_container");
+      var comp=AdobeAn.getComposition("0257E2E2153CE54AAE3B93064A8F7130");
+      var lib=comp.getLibrary();
+      handleComplete({},comp);
+    }
+    function handleComplete(evt,comp) {
+      //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+      var lib=comp.getLibrary();
+      var ss=comp.getSpriteSheet();
+      exportRoot = new lib.TaylorAvator();
+      stage = new lib.Stage(canvas);	
+      //Registers the "tick" event listener.
+      fnStartAnimation = function() {
+        stage.addChild(exportRoot);
+        createjs.Ticker.framerate = lib.properties.fps;
+        createjs.Ticker.addEventListener("tick", stage);
+      }	    
+      //Code to support hidpi screens and responsive scaling.
+      AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+      AdobeAn.compositionLoaded(lib.properties.id);
+      fnStartAnimation();
+    }
+    </script>
+    <meta name="generator" content="Sainpse">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "/static/images/logo.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#835fa8">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+
+
+ <body onload="init();">
+  
+  <div class="icons">
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:200px; height:200px">
+      <canvas id="canvas" width="200" height="200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+      <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:200px; position: absolute; left: 0px; top: 0px; display: block;">
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h1>Taylor is Coming Soon<span class="dot">.</span></h1>
+    <p>Thank you for showing interest. Please come back again on the 25th February 2022</p>
+   </div>
+ </body>
+
+</html>

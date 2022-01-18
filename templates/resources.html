@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -8,13 +7,13 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
-<link rel="stylesheet" href="{% static 'css/Home.css' %}" media="screen">
-<link rel="stylesheet" href="{% static 'css/sainpse.css' %}" media="screen">
-    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename='css/Home.css') }}" media="screen">
+<link rel="stylesheet" href="{{url_for('static', filename='css/sainpse.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='script/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static', filename='script/nicepage.js') }}" defer=""></script>
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="{% static 'js/Tayloravator.js' %}"></script>
+    <script src="{{url_for('static', filename='script/Tayloravator.js') }}"></script>
     <script>
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function init() {
@@ -46,7 +45,10 @@
     <meta name="generator" content="Sainpse">
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-  
+    
+    
+    
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -59,19 +61,11 @@
     <meta property="og:type" content="website">
   </head>
 
-
- <body onload="init();">
+ <body>
   
-  <div class="icons">
-    <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:200px; height:200px">
-      <canvas id="canvas" width="200" height="200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-      <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:200px; height:200px; position: absolute; left: 0px; top: 0px; display: block;">
-      </div>
-    </div>
-  </div>
   <div class="wrapper">
-    <h1>Taylor is Coming Soon<span class="dot">.</span></h1>
-    <p>Thank you for showing interest. Please come back again on the 25th February 2022</p>
+    <h1>Coming Soon<span class="dot">.</span></h1>
+    <p>Thank you for showing interest.</p>
    </div>
  </body>
 
