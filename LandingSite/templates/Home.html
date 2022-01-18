@@ -1,0 +1,279 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Building bulletproof apps, Super Duper &amp;amp; such, Designed for humans, Conectivity, Lorem ipsum dolor sit amet, cotur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam., See our awesome gallery, It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Home.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/sainpse.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="{% static 'js/Tayloravator.js' %}"></script>
+    <script>
+    var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+    function init() {
+      canvas = document.getElementById("canvas");
+      anim_container = document.getElementById("animation_container");
+      dom_overlay_container = document.getElementById("dom_overlay_container");
+      var comp=AdobeAn.getComposition("0257E2E2153CE54AAE3B93064A8F7130");
+      var lib=comp.getLibrary();
+      handleComplete({},comp);
+    }
+    function handleComplete(evt,comp) {
+      //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+      var lib=comp.getLibrary();
+      var ss=comp.getSpriteSheet();
+      exportRoot = new lib.TaylorAvator();
+      stage = new lib.Stage(canvas);	
+      //Registers the "tick" event listener.
+      fnStartAnimation = function() {
+        stage.addChild(exportRoot);
+        createjs.Ticker.framerate = lib.properties.fps;
+        createjs.Ticker.addEventListener("tick", stage);
+      }	    
+      //Code to support hidpi screens and responsive scaling.
+      AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+      AdobeAn.compositionLoaded(lib.properties.id);
+      fnStartAnimation();
+    }
+    </script>
+    <meta name="generator" content="Sainpse">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "/static/images/logo.png",
+		"sameAs": []
+}</script>
+    <meta name="theme-color" content="#835fa8">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body onload="init();" class="u-backlink-hidden u-body"><header class="u-align-center-sm u-align-center-xs u-clearfix u-header u-sticky u-sticky-2f14 u-white u-header" id="sec-2c0c"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'images/logo.png' %}" alt="" data-image-width="200" data-image-height="200">
+        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 500;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 1px 0px; font-size: calc(1em + 1px);">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a8f"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-8a8f" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-palette-2-base u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-2-light-3" href="/" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-active-palette-2-base u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-2-light-3" style="padding: 10px 20px;" href="products">Products</a>
+</li><li class="u-nav-item"><a class="u-active-palette-2-base u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-2-light-3" style="padding: 10px 20px;" href="resources">Resources</a>
+</li><li class="u-nav-item"><a class="u-active-palette-2-base u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-hover-palette-2-light-2 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-2-light-3" style="padding: 10px 20px;" href="#footer">Contact us</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav u-sidenav-1">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;" href="products">Products</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;" href="resources">Resources</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;" href="#footer">Contact us</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h4 class="u-text u-text-default u-text-1">THE SAINPSE INSTITUTE </h4>
+        <h4 class="u-text u-text-default u-text-palette-2-light-1 u-text-2">OF AUGMENTED INTELLIGENCE </h4>
+      </div></header> 
+    <section class="skrollable u-clearfix u-image u-parallax u-valign-middle-sm u-section-1" id="sec-5549" data-image-width="1280" data-image-height="853">
+      <div class="u-expanded-height u-opacity u-opacity-50 u-shape u-shape-svg u-text-palette-2-base u-shape-1">
+        <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 100" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ed41"></use></svg>
+        <svg class="u-svg-content" viewBox="0 0 160 100" x="0px" y="0px" id="svg-ed41"><path d="M100,0l60,100H0V0H100z"></path></svg>
+      </div>
+      <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+        <h1>
+          <span class="u-text-white" style="font-weight: 700;">AUGMENTING HUMAN INTELLIGENCE</span>
+        </h1>
+        <p id="isPasted">
+          <span class="u-text-grey-15">
+            <span style="font-size: 0.875rem;">We're looking for ways to help make you smarter, more effective and successful. Join us on a journey through the evolution of augmenting our intuition with machine intelligence.</span>
+          </span>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-2" id="sec-72e5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">We prepapring something</h2>
+        <p class="u-text u-text-2">With the support of Taylor our<span class="u-text-palette-2-base" style="font-weight: 700;"> fully automated trading agent</span>, people with no finacial markets knowledge/experience can now have a chance to make a <span class="u-text-palette-2-base"><b>consistent stream of income.</b>&nbsp;
+          </span>
+          <br>
+          <br>
+          <span style="font-weight: 700;">Note:</span> Taylor's initial release will only be available for a <span style="font-weight: 700;" class="u-text-palette-2-base">limited</span> number of individuals.&nbsp;<br>
+          <br>Contact me to be considered as one of the early private investors or to find out more<br>
+        </p>
+        
+        <div class="u-countdown u-countdown-1" data-target-date="Mon, 28 Feb 2022 10:50:55 GMT" data-type="to-date" data-for="everyone" data-time-left="750m" data-timer-id="5783" data-target-number="100" data-direction="down" data-start-time="Fri Nov 26 2021 18:31:16 GMT+0300 (Москва, стандартное время)" data-frequency="10s" data-show-message="false">
+          <div class="u-countdown-wrapper u-spacing-30">
+            <div class="u-countdown-item u-countdown-years u-hidden u-spacing-15 u-countdown-item-1">
+              <div class="u-countdown-counter u-countdown-counter-1"><span class="u-countdown-number sainpseFontNum">0</span><span class="u-countdown-number sainpseFontNumu-hidden">0</span></div>
+              <div class="u-countdown-label u-text-grey-50 sainpseFont">Years</div>
+            </div>
+            <div class="u-countdown-separator u-hidden u-countdown-separator-1 sainpseFontNum">:</div>
+            <div class="u-countdown-days u-countdown-item u-spacing-15 u-countdown-item-2">
+              <div class="u-countdown-counter u-countdown-counter-2"><span class="u-countdown-number sainpseFontNum">4</span><span class="u-countdown-number sainpseFontNum">7</span><span class="u-countdown-number u-hidden">0</span></div>
+              <div class="u-countdown-label u-text-grey-50 sainpseFont">Days</div>
+            </div>
+            <div class="u-countdown-separator u-countdown-separator-2 sainpseFontNum">:</div>
+            <div class="u-countdown-hours u-countdown-item u-spacing-15 u-countdown-item-3">
+              <div class="u-countdown-counter u-countdown-counter-3"><span class="u-countdown-number sainpseFontNum">1</span><span class="u-countdown-number sainpseFontNum">2</span></div>
+              <div class="u-countdown-label u-text-grey-50 sainpseFont">Hours</div>
+            </div>
+            <div class="u-countdown-separator u-countdown-separator-3 sainpseFontNum">:</div>
+            <div class="u-countdown-item u-countdown-minutes u-spacing-15 u-countdown-item-4">
+              <div class="u-countdown-counter u-countdown-counter-4"><span class="u-countdown-number sainpseFontNum">2</span><span class="u-countdown-number sainpseFontNum">9</span></div>
+              <div class="u-countdown-label u-text-grey-50 sainpseFont">Minutes</div>
+            </div>
+            <div class="u-countdown-separator u-countdown-separator-4 sainpseFontNum">:</div>
+            <div class="u-countdown-item u-countdown-seconds u-spacing-15 u-countdown-item-5">
+              <div class="u-countdown-counter u-countdown-counter-5"><span class="u-countdown-number sainpseFontNum">4</span><span class="u-countdown-number sainpseFontNum">3</span></div>
+              <div class="u-countdown-label u-text-grey-50 sainpseFont">Seconds</div>
+            </div>
+            <div class="u-countdown-separator u-hidden u-countdown-separator-5 sainpseFontNum">:</div>
+            <div class="u-countdown-item u-countdown-numbers u-hidden u-spacing-15 u-countdown-item-6">
+              <div class="u-countdown-counter u-countdown-counter-6"><span class="u-countdown-number sainpseFontNum">0</span><span class="u-countdown-number sainpseFontNum">0</span><span class="u-countdown-number">1</span><span class="u-countdown-number">0</span><span class="u-countdown-number">0</span></div>
+              <div class="u-countdown-label u-text-grey-50 u-countdown-label-6">Items</div>
+            </div>
+          </div>
+          <div class="u-countdown-message u-hidden">
+            <p>Sorry, the time is up.</p>
+          </div>
+        </div>
+        <div class="u-container-style sainpseTaylor">
+          <div class="">
+            <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:200px; height:200px">
+              <canvas id="canvas" width="200" height="200" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+    <section class="u-clearfix u-palette-4-base u-section-3" id="sec-3fd0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">About</h1>
+        <p class="u-text u-text-2">The Sainpse Institute strives to safely utilize recent advancements in artificial intelligence research to produce tools and products that will augment our individual and collective capacity, with the intent to fully explore the positive pontential of pratical applications for all major breakthroughs in the field of AI.<br>
+          <br>&nbsp;Problems in AI are often posed&nbsp;in terms of matching or surpassing human performance: beating humans at chess, Go or medical diagnoses; This is mainly because we concieve them as problem solving machines, something like an oracle that we can ask questions and get answer from. While that is very important. Our focus is on building systems that are measured in how much they make us better at what we already do. We think of it as a cognitive technology that can expand the range of&nbsp; human thought and skill, as much as the the invention of writing introduced us to new modes of thought and expression.<br>
+          <br>
+        </p>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-15 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-palette-2-base u-spacing-10 u-icon-1"><img src="{% static 'images/safety.png' %}" alt=""></span>
+                  <h4 class="u-heading-font u-text u-text-3">&nbsp; &nbsp;Safety</h4>
+                  <ul class="u-text u-text-4">
+                    <li>Committment in creating products that safe and fair to use, and driving the broad and diverse adoption of such products across all industries and cultures.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-palette-2-base u-spacing-10 u-icon-2"><img src="{% static 'images/application.png' %}" alt=""></span>
+                  <h4 class="u-heading-font u-text u-text-5">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Application</h4>
+                  <ul class="u-text u-text-6">
+                    <li>Dedication in applying research advancements in AI to create useful products.</li>
+                    <li>Reveal&nbsp; and explore the full pontential of machine intelligence driven products to the public, so that everyone can conceive&nbsp;what new a revolution will look like.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-15 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3"><span class="u-file-icon u-icon u-icon-circle u-palette-2-base u-spacing-10 u-icon-3"><img src="{% static 'images/research.png' %}" alt=""></span>
+                  <h4 class="u-heading-font u-text u-text-7">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Research</h4>
+                  <ul class="u-text u-text-8">
+                    <li>Researching impactfull potential applications</li>
+                    <li>&nbsp;Contributing to AI research</li>
+                    <li>Assesing and preventing pontential misuse</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-15 u-layout-cell-4">
+                <div class="u-container-layout u-container-layout-4"><span class="u-file-icon u-icon u-icon-circle u-palette-2-base u-spacing-10 u-icon-4"><img src="{% static 'images/education.png' %}" alt=""></span>
+                  <h4 class="u-heading-font u-text u-text-9">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Eduction</h4>
+                  <ul class="u-text u-text-10">
+                    <li>Educating the public about the field and its pontetial use &amp; dangers .</li>
+                    <li>Discerning highly technical research through simplification</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-footer u-grey-dark-2" id="footer"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1"><!--position-->
+                  <div data-position="" class="u-position u-position-1"><!--block--><!--/block--></div><!--/position-->
+                  <h2 class="u-subtitle u-text u-text-1">Contact Information</h2>
+                  <p class="u-text u-text-2">Email&nbsp; :marcusm@sainpse.com<br>Phone: +27 67 052 7665<br>
+                    <br>
+                    <br>
+                  </p>
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="github" target="_blank" href="https://github.com/Sainpse"><span class="u-file-icon u-icon u-social-icon u-social-twitter u-icon-1"><img src="{% static 'images/github.png' %}" alt=""></span>
+                    </a>
+                    <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/sainpse/"><span class="u-icon u-social-icon u-social-instagram u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-82eb"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-82eb"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-center-sm u-align-right-md u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="200" data-image-height="200">
+                    <img src="{% static 'images/logoFooter.png' %}" class="u-logo-image u-logo-image-1">
+                  </a>
+                </div>
+              </div>
+              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-right-lg u-align-right-xl u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
+                <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <p class="u-text">
+        <span>The Sainpse Institute</span>
+      </p>
+      <p class="u-text">
+        <span>founded</span>
+      </p>
+      <p class="u-text">
+        <span>2022</span>
+      </p>
+    </section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-2-dark-1 u-spacing-15" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
+  </body>
+</html>
