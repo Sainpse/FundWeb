@@ -120,3 +120,16 @@ p {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+.sainpseSlogan{
+  text-justify: kashida;
+  font-weight: bolder;
+  color: #35a78c  !important;
+}
+
+.sainpseSocialDiv{
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+}
